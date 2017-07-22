@@ -1,12 +1,12 @@
-#include <stdio.h>
+#include<stdio.h>
+#include<conio.h>
 int main()
 {
-int n;
-printf("Enter an integer");
-scanf("%d", &n);
-if(n%2== 0)
-printf("%d is even",n);
-else
-printf("%d is odd",n);
+int j;
+scanf("%d",&j);
+if(j%2==0)
+printf("\neven");
+  else
+  printf("\nOdd");
 return 0;
 }
