@@ -1,23 +1,14 @@
-#inlude<stdio.h>
-void main()
+include <stdio.h>
+int main()
 {
-int j1, j2, j3;
-printf("Enter the values of num1, num2 and num3\n");
-scanf("%d %d %d", &j1, &j2, &j3);
-printf("j1 = %d\tj2 = %d\tj3 = %d\n",j1,j2,j3);
-if (j1 > j2)
-{
-if (j1 >j3)
-{
-printf("j1 is the greatest among three \n");
-}
-els
-{
-printf("j3 is the greatest among three \n");
-}
-}
-else if (j1>j3)
-printf("j2 is the greatest among three \n");
-else
-printf("j3 is the greatest among three \n");
+double n1, n2, n3;
+printf("Enter three different numbers: ");
+scanf("%lf %lf %lf", &n1, &n2, &n3);
+if( n1>=n2 && n1>=n3 )
+printf("%.2f is the largest number.", n1);
+if( n2>=n1 && n2>=n3 )
+printf("%.2f is the largest number.", n2);
+if( n3>=n1 && n3>=n2 )
+printf("%.2f is the largest number.", n3);
+ return 0;
 }
