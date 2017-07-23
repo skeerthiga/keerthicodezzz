@@ -1,15 +1,18 @@
-#include <stdio.h> 
-#include <ctype.h> 
-int main() {  
-char ch;
-printf("Enter a Ch\n");  
-scanf("%c", &ch);  
-if(isalpha(character)) {  
-printf("%c is an Alphabet\n", ch);  
-} 
-else 
-{  
-printf("%c is Not an Alphabet\n", ch);  
+#include<stdio.h>
+#include<conio.h>
+void main()
+{
+clrscr();
+char k;
+printf("Enter a character: ");
+scanf("%c",&ch);
+if((ch>='a'&& ch<='z') || (ch>='A' && ch<='Z'))
+{
+printf("%c is an alphabet",ch);
 }
-return 0;  
+else
+{
+printf("%c is not an alphabet",ch);
+}
+getch();
 }
