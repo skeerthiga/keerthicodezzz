@@ -6,13 +6,13 @@ clrscr();
 char k;
 printf("Enter a character: ");
 scanf("%c",&ch);
-if((ch>='a'&& ch<='z') || (ch>='A' && ch<='Z'))
+if((k>='a'&& k<='z') || (k>='A' && k<='Z'))
 {
-printf("%c is an alphabet",ch);
+printf("%c is an alphabet",k);
 }
 else
 {
-printf("%c is not an alphabet",ch);
+printf("%c is not an alphabet",k);
 }
 getch();
 }
