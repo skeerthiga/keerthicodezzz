@@ -16,8 +16,8 @@ els
 printf("j3 is the greatest among three \n");
 }
 }
-else if (num2 > num3)
-printf("num2 is the greatest among three \n");
+else if (j1>j3)
+printf("j2 is the greatest among three \n");
 else
-printf("num3 is the greatest among three \n");
+printf("j3 is the greatest among three \n");
 }
