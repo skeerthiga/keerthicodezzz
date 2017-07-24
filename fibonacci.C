@@ -1,11 +1,11 @@
 #include <stdio.h>
 int main()
 {
-int l, n,y1= 0,y2=1,nextTerm;
-printf("Enter the number of terms: ");
-scanf("%d", &n);
-printf("Fibonacci Series: ");
-for (l= 1;l<= n;++l)
+int l,o,y1= 0,y2=1,nextTerm;
+printf("Enter the number of terms");
+scanf("%d",&o);
+printf("Fibonacci Series");
+for (l= 1;l<= o;++l)
 {
 printf("%d",y11);
 nextTerm = y1+y2;
