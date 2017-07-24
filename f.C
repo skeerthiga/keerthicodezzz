@@ -1,11 +1,17 @@
-#include<stdio.h>
-int main()
+#include <stdio.h>
+void main()
 {
-int p,k=1,n;
-printf("Enter a number");
-scanf("%d",&n);
-for(p=1;p<=n;p++)
-k=k*p;
-printf("Factorial of %d is %d",n,k);
-return 0;
+int i,fact = 1,num;
+printf("Enter the number \n");
+scanf("%d", &num);
+if(num<=0)
+fact=1;
+else
+{
+for(i=1;i<=num;i++)
+{
+fact=fact*i;
+}
+}
+  printf("Factorial of %d = %5d\n",num,fact);
 }
