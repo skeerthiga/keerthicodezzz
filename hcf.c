@@ -1,11 +1,11 @@
 #include <stdio.h>
 int gcd(int j,int k)
 {
-if (j==0||k==0)
+if(j==0||k==0)
 return 0;
-if (j==k)
+if(j==k)
 return j;
-if (j>k)
+if(j>k)
 return gcd(j-k,k);
 return gcd(j,j-k);
 }
