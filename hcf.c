@@ -1,16 +1,17 @@
 #include <stdio.h>
 int main()
 {
-int t1,t2;
-printf("Enter two positive integers: ");
-scanf("%d %d",&t1,&t2);
-while(t1!=t2)
+int i,k1,k2,min,hcf=1;
+printf("Enter any two numbers to find HCF: ");
+scanf("%d%d", &k1, &k2);
+min = (k1<k2) ? k1 : k2;
+for(i=1; i<=min; i++)
 {
-if(t1 > t2)
-t1-=t2;
-else
-t2-=t1;
+if(k1%i==0 && k2%i==0)
+{
+hcf=i;
 }
-printf("GCD = %d",t1);
+}
+printf("HCF of %d and %d = %d\n",k1,k2,hcf);
 return 0;
 }
